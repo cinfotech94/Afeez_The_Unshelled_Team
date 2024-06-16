@@ -1,12 +1,23 @@
+import { useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
+
 
 const Header = () => {
   const [menuVisible, setMenuVisible] = useState(false);
+  const navigate = useNavigate();
 
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
-
+  const handleEnterHome = () => {
+    navigate('/home'); // Adjust this path according to your routing setup
+  };
+  const handleEnterBooks = () => {
+    navigate('/books'); // Adjust this path according to your routing setup
+  };
+  const handleEnterContact = () => {
+    navigate('/contact'); // Adjust this path according to your routing setup
+  };
   return (
     <div>
       <header className="text-md font-extrabold bg-yellow-400 text-blue-600 text-center uppercase leading-loose">
@@ -21,13 +32,13 @@ const Header = () => {
             <a href="/" className="text-blue-600 border-2 border-white hover:text-white hover:border-blue-600 px-3">
               WelcomePage
             </a>
-            <a href="/home" className="text-blue-600 border-2 border-white hover:text-white hover:border-blue-600 px-3">
+            <a onClick={handleEnterHome} className="text-blue-600 border-2 border-white hover:text-white hover:border-blue-600 px-3">
               Home
             </a>
-            <a href="/books" className="text-blue-600 border-2 border-white hover:text-white hover:border-blue-600 px-3">
+            <a onClick={handleEnterBooks} className="text-blue-600 border-2 border-white hover:text-white hover:border-blue-600 px-3">
               List
             </a>
-            <a href="/contact" className="text-blue-600 border-2 border-white hover:text-white hover:border-blue-600 px-3">
+            <a onClick={handleEnterContact} className="text-blue-600 border-2 border-white hover:text-white hover:border-blue-600 px-3">
               Contact
             </a>
           </nav>
