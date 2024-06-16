@@ -4,8 +4,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Welcome from '././Componenets/WelcomePage/Welcome';
 import Home from '././Componenets/Homepage/Home'; // Assuming you have a Home component
-import BooksPage from './Componenets/BookPages/BooksPages';
-import ContactUs from './Componenets/ContactUs/ContactUs';
+import BooksPage from '././Componenets/BookPages/BooksPages';
+import ContactUs from '././Componenets/ContactUs/ContactUs';
 
 const App = () => {
   return (
