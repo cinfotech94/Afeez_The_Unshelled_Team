@@ -32,15 +32,15 @@ const Header = () => {
             <a href="/" className="text-blue-600 border-2 border-white hover:text-white hover:border-blue-600 px-3">
               WelcomePage
             </a>
-            <a onClick={handleEnterHome} className="text-blue-600 border-2 border-white hover:text-white hover:border-blue-600 px-3">
+            <button onClick={handleEnterHome} className="text-blue-600 border-2 border-white hover:text-white hover:border-blue-600 px-3">
               Home
-            </a>
-            <a onClick={handleEnterBooks} className="text-blue-600 border-2 border-white hover:text-white hover:border-blue-600 px-3">
+            </button>
+            <button onClick={handleEnterBooks} className="text-blue-600 border-2 border-white hover:text-white hover:border-blue-600 px-3">
               List
-            </a>
-            <a onClick={handleEnterContact} className="text-blue-600 border-2 border-white hover:text-white hover:border-blue-600 px-3">
+            </button>
+            <button onClick={handleEnterContact} className="text-blue-600 border-2 border-white hover:text-white hover:border-blue-600 px-3">
               Contact
-            </a>
+            </button>
           </nav>
 
           {/* Mobile Menu (Hamburger Icon) */}
